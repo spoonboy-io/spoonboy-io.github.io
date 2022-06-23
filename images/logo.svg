@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2396px" height="449px" viewBox="0 0 2396 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(0.719214, 0.519577)">
+            <g id="Group" transform="translate(0.000000, 0.000000)" fill="#08BD27">
+                <polygon id="Rectangle" transform="translate(79.536870, 334.396440) rotate(-11.000000) translate(-79.536870, -334.396440) " points="68.4100435 225.907043 90.9104365 227.472038 116.491503 426.863158 79.4259643 442.885837 42.5822375 426.050511"></polygon>
+                <polygon id="Rectangle" transform="translate(70.587862, 188.497534) scale(-1, 1) rotate(90.000000) translate(-70.587862, -188.497534) " points="29.0619983 177.163393 112.113726 165.823393 112.061998 188.865007 29.0619983 211.171674"></polygon>
+                <polygon id="Rectangle-Copy-8" transform="translate(123.945383, 118.899599) scale(-1, 1) rotate(131.000000) translate(-123.945383, -118.899599) " points="78.06322 68.4872142 142.427639 7.25724324 184.439677 117.479055 148.112397 198.31693 111.041747 230.541954 63.4510889 175.795164"></polygon>
+            </g>
+            <text id="SPOON-BOY" font-family="Futura-Bold, Futura" font-size="320" font-weight="bold" letter-spacing="-5" fill="#000000">
+                <tspan x="284.820786" y="348.480423">SPOON BOY</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

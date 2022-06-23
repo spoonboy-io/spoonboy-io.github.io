@@ -5,11 +5,99 @@
     <title>Spoonboy.io</title>
     <meta name="description" content="Golang, morpheus, go, plugins and applications">
     <meta name="keywords" content="golang, morpheus, go, plugins, applications">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script>
+        const toggleBurger = () => {
+            let burgerIcon = document.getElementById('burger');
+            let dropMenu = document.getElementById('navbar-menu');
+            burgerIcon.classList.toggle('is-active');
+            dropMenu.classList.toggle('is-active');
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        body {
+        html{
+            background-color:#9FDF5C;
+        }
+        .sp-green-1{
+            color: #666666;
+            background-color:#9FDF5C;
+        }
+        .sp-green-2{
+            background-color:#72CA53;
+        }
+        .sp-green-3{
+            background-color:#03A844;
+        }
+        .sp-green-4{
+            background-color:#036928;
+        }
+        .sp-green-5{
+            background-color:#023A16;
+        }
+        * {
+            font-family: "Anek Latin", sans-serif;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: "Poppins", sans-serif!important;
+        }
+        h2 {
+            font-size:32px;
+        }
+        h3 {
+            font-size:26px;
+        }
+        h4 {
+            font-size:20px;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size:18px;
+        }
+
+        #banner{
+            //background-color: #000000;
+            //background-color: #08BD27;
+            color:#FFFFFF;
+           background: #000000 url("/images/banner-background-2.png") no-repeat right top;
+
+        }
+        #banner h1{
+            font-family: "Poppins", sans-serif;
+            font-size:60px;
+            font-weight:500;
+            margin-bottom:20px;
+        }
+        #banner h2{
+            font-family: "Poppins", sans-serif;
+            font-size:20px;
+            color:#38D155;
+        }
+        #banner-button {
+            margin-top:50px;
+        }
+
+        #tiles{
+            background-color: #08BD27;
+            //background-color: #9FDF5C;
+            color:#FFFFFF;
+
+        }
+
+        #footer {
+            background-color:#000000;
+        }
+        #footer2 {
+            background-color:#08BD27;
+            height:auto;
+        }
+       /* body {
+            height:100%;
             background-color: #000000;
-            color: #FFFFFF;
+            //color: #FFFFFF;
             font-family: "Courier New", sans-serif;
         }
         a {
@@ -20,12 +108,256 @@
         }
         a:hover {
             color: forestgreen;
-        }
+        }*/
     </style>
 </head>
 <body>
-<h3>Spoonboy.io</h3>
-> <a href="https://github.com/spoonboy-io">Github</a><br/>
-> <a href="https://twitter.com/SpoonBoyIO">Twitter</a>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://spoonboy.io">
+            <img src="/images/logo.svg">
+        </a>
+
+        <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggleBurger()">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://spoonboy.io">
+                Home
+            </a>
+
+            <!--<a class="navbar-item">
+                About
+            </a>
+
+            <a class="navbar-item">
+                Articles
+            </a>-->
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Projects
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://github.com/spoonboy-io/dozer">
+                        Dozer - Webhooks for Morpheus
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="https://github.com/spoonboy-io/dujour">
+                        Dujour - JSON/CSV static file server
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Plugins
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://github.com/spoonboy-io/morpheus-nodejs-task-plugin">
+                        Node.js Task Plugin
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="https://github.com/spoonboy-io/morpheus-golang-task-plugin">
+                        Golang Task Plugin
+                    </a>
+                </div>
+            </div>
+
+            <!--<a class="navbar-item">
+                Contact
+            </a>-->
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary is-small" style="background-color:#38D155;" href="https://github.com/spoonboy-io">
+                        <strong>Github</strong>
+                    </a>
+                   <!-- <a class="button is-ghost is-small">
+                       <strong>Twitter</strong>
+                    </a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="banner" class="section is-large">
+    <div class="container">
+        <div id="banner-top">
+            <h1>
+                Spoon Boy
+            </h1>
+            <h2>
+                Applications, plugins, tooling and more, for Morpheus Cloud Management Platform
+            </h2>
+        </div>
+        <div id="banner-button">
+            <a href="https://github.com/spoonboy-io">
+                <button class="button is-dark is-medium">View Projects</button>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/spoonboy-io">
+                <button class="button is-dark is-medium">Learn More</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--
+<section class="section">
+    <div class="container is-fullhd">
+        <h2 class="title has-text-centere">
+           Spoon Boy for Morpheus
+        </h2>
+        <div class="columns">
+            <div class="column">
+                <h3>Welcome!</h3>
+                <p>If you're here you are likely a Morpheus Cloud Management Platform Customer or Partner, or maybe Employee :)</p>
+                <p>There's a small chance you are lost I guess, but welcome anyway!</p>
+                <h3>So what is Spoon Boy?</h3>
+                <p>It's a growing suite of applications, plugins and tooling for Morpheus that users of Morpheus might find useful.</p>
+            </div>
+            <div class="column">
+                <h3>Who is Spoon Boy?</h3>
+                <p>It's a project by Ollie Phillips a Golang engineer and ex-Morpheus field engineer.</p>
+                <p>Most of the things you can find here were developed</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section">
+    <div class="container">
+        <div class="notification is-primary">
+            This container has a <code>max-width</code> of <code>$desktop - $container-offset</code> on widescreen and fullhd.
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="tiles">
+
+    <div class="container is-fullhd">
+        <h2 class="title has-text-white has-text-centered">Projects &amp; Plugins</h2>
+        <p class="has-text-white has-text-centered">Some of the things recently developed by the Spoon Boy Project</p>
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification sp-green-4">
+                            <h3>Dujour</h3>
+                            <h4 class="subtitle">Webhooks for Morpheus</h4>
+                            <div class="content">
+                                Lots of shit
+                            </div>
+                        </article>
+                        <article class="tile is-child notification sp-green-5">
+                            <h3>Dujour</h3>
+                            <h4 class="subtitle">Webhooks for Morpheus</h4>
+                            <div class="content">
+                                Lots of shit
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification sp-green-3">
+                            <h3>Dujour</h3>
+                            <h4 class="subtitle">Webhooks for Morpheus</h4>
+                            <div class="content">
+                                Lots of shit
+                            </div>
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child  notification sp-green-1">
+                        <h3>Dujour</h3>
+                        <h4 class="subtitle">Webhooks for Morpheus</h4>
+                        <div class="content">
+                            Lots of shit
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!--
+            <div class="tile is-parent">
+                <article class="tile is-child notification sp-green-2">
+                    <div class="content">
+                        <p class="title">Tall tile</p>
+                        <p class="subtitle">With even more content</p>
+                        <div class="content">
+                            cotent
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-fullhd">
+        <h1 class="title">
+            Spoon Boy
+        </h1>
+        <h2 class="subtitle">
+
+        </h2>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-fullhd">
+        <h1 class="title">
+            Spoon Boy
+        </h1>
+        <h2 class="subtitle">
+
+        </h2>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-fullhd">
+        <h1 class="title">
+            Spoon Boy
+        </h1>
+        <h2 class="subtitle">
+
+        </h2>
+    </div>
+</section>
+
+<section id="footer" class="section is-medium">
+    <div class="container is-fullhd">
+        <h1 class="title">
+           Footer
+        </h1>
+        <h2 class="subtitle">
+
+        </h2>
+    </div>
+</section>
+-->
 </body>
 </html>
