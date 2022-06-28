@@ -1,0 +1,6 @@
+User-Agent: *
+allow: /
+disallow: /templates/
+disallow: .gitignore
+disallow: README.md
+disallow: CNAME

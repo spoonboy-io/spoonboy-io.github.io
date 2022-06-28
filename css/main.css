@@ -1,0 +1,256 @@
+
+.sp-green-1{
+    color: #666666;
+    background-color:#9FDF5C;
+}
+.sp-green-2{
+    background-color:#72CA53;
+}
+.sp-green-3{
+    background-color:#03A844;
+}
+.sp-green-4{
+    background-color:#036928;
+}
+.sp-green-5{
+    background-color:#023A16;
+}
+
+.color-true{
+    color: #9FDF5C;
+}
+.color-optional {
+    color: #cecece;
+}
+.color-false {
+    color:red;
+}
+.color-key-icon{
+    color:#485FC7;
+}
+.up-icon{
+    margin-top:-4px;
+}
+.sp-code{
+    font-family:"Courier New", sans-serif;
+    font-size:14px;
+    color: #000000;
+    background-color:#C3CAE8;
+    border-radius:3px;
+    padding:11px;
+}
+* {
+    font-family: "Anek Latin", sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: "Poppins", sans-serif!important;
+}
+h2 {
+    font-size:30px;
+}
+h3 {
+    font-size:26px;
+}
+h4 {
+    font-size:20px;
+}
+p {
+    margin-bottom: 1rem;
+    font-size:16px;
+}
+
+#banner{
+    color:#FFFFFF;
+    background: #000000 url("/images/banner-background-2.png") no-repeat right top;
+
+}
+#banner h1{
+    font-family: "Poppins", sans-serif;
+    font-size:60px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+#banner h2{
+    font-family: "Poppins", sans-serif;
+    font-size:20px;
+    color:#38D155;
+}
+#banner-button {
+    margin-top:50px;
+}
+
+#banner-project{
+    color:#FFFFFF;
+    background: #000000 url("/images/banner-background-2.png") no-repeat right top;
+    border-bottom:10px solid #9FDF5C;
+
+}
+#banner-project h1{
+    font-family: "Poppins", sans-serif;
+    font-size:50px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+#banner-project h2{
+    font-family: "Poppins", sans-serif;
+    font-size:20px;
+    color:#38D155;
+}
+
+#meta-project {
+    background-color:#9FDF5C;
+    padding-top:30px;
+    padding-bottom:0px;
+}
+
+#intro-project{
+
+}
+
+#features-project{
+    background-color:#eeeeee;
+}
+
+.table-project th, .table-project td {
+    text-align:center!important;
+
+}
+
+.table-project td {
+    padding-top:15px;!important;
+    padding-bottom:15px;!important;
+}
+
+.table-project .left {
+    text-align:left!important;
+}
+
+#key-project{
+
+}
+
+#tiles{
+    background-color: #08BD27;
+//background-color: #9FDF5C;
+    color:#FFFFFF;
+
+}
+
+#footer {
+    background-color:#000000;
+}
+#footer2 {
+    background-color:#08BD27;
+    height:auto;
+}
+
+.footer-top {
+    /*border-top:1px solid #444444;
+    padding-top:40px;*/
+    padding-bottom:20px;
+}
+.clear-both{
+    clear:both!important;
+}
+
+.footer-logo{
+    width:auto;
+    float:left;
+}
+
+.footer-social{
+    width:auto;
+    float:right;
+    text-align:right;
+    color:#999999;
+}
+
+.footer-social a:link, .footer-social a:visited{
+    color:#999999!important;
+}
+.footer-social a:hover{
+    color:#cecece!important;
+}
+
+.footer-primary{
+    border-top:1px solid #444444;
+    padding-top:50px;
+    padding-bottom:50px;
+    font-size:15px;
+
+}
+
+.footer-primary-left {
+    float:left;
+    margin-right: 100px;
+}
+
+.footer-primary-right {
+    float:right;
+    margin-right: 100px;
+}
+
+.footer-primary-left-title, .footer-primary-right-title {
+    font-size:15px;
+    text-transform:uppercase;
+    color: #CECECE;
+}
+
+.footer-primary a:link, .footer-primary a:visited {
+    color: #999999!important;
+}
+
+.footer-primary a:hover {
+    color: #cecece!important;
+}
+
+.footer-secondary{
+    border-top:1px solid #444444;
+    padding-top:20px;
+    color:#cecece;
+}
+
+.footer-secondary a:link, .footer-secondary a:visited {
+    color: #999999!important;
+}
+.footer-secondary a:hover {
+    color: #cecece!important;
+}
+
+.footer-secondary-left{
+    float:left;
+}
+.footer-secondary-right{
+    float:right;
+    text-align:right;
+}
+/* Steps */
+#steps {
+    //background-color: #cecece;
+}
+.step-title {
+    font-family: "Poppins", sans-serif;
+    font-size:24px!important;
+}
+.step-details p {
+    display:block;
+    font-size:16px;
+}
+
+
+/* Media for mobile */
+@media screen and (min-width: 0px) and (max-width: 920px) {
+    .drop-mobile{display:none;}
+    .show-mobile{display:block;}
+    .mobile-full{float:left!important;}
+}
+
+@media screen and (min-width: 921px) and (max-width:5000px) {
+    .drop-mobile {display:block;}
+    .show-mobile {display:none;}
+}
+
+/* Bulma Overrides */
+.tag{
+    text-transform:uppercase!important;
+}

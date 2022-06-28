@@ -7,112 +7,17 @@
     <meta name="keywords" content="golang, morpheus, go, plugins, applications">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <script>
-        const toggleBurger = () => {
-            let burgerIcon = document.getElementById('burger');
-            let dropMenu = document.getElementById('navbar-menu');
-            burgerIcon.classList.toggle('is-active');
-            dropMenu.classList.toggle('is-active');
-        };
-    </script>
+    <script src="https://kit.fontawesome.com/b74b7fc428.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <style>
-        html{
-            background-color:#9FDF5C;
-        }
-        .sp-green-1{
-            color: #666666;
-            background-color:#9FDF5C;
-        }
-        .sp-green-2{
-            background-color:#72CA53;
-        }
-        .sp-green-3{
-            background-color:#03A844;
-        }
-        .sp-green-4{
-            background-color:#036928;
-        }
-        .sp-green-5{
-            background-color:#023A16;
-        }
-        * {
-            font-family: "Anek Latin", sans-serif;
-        }
-        h1, h2, h3, h4, h5 {
-            font-family: "Poppins", sans-serif!important;
-        }
-        h2 {
-            font-size:32px;
-        }
-        h3 {
-            font-size:26px;
-        }
-        h4 {
-            font-size:20px;
-        }
-        p {
-            margin-bottom: 1rem;
-            font-size:18px;
-        }
-
-        #banner{
-            //background-color: #000000;
-            //background-color: #08BD27;
-            color:#FFFFFF;
-           background: #000000 url("/images/banner-background-2.png") no-repeat right top;
-
-        }
-        #banner h1{
-            font-family: "Poppins", sans-serif;
-            font-size:60px;
-            font-weight:500;
-            margin-bottom:20px;
-        }
-        #banner h2{
-            font-family: "Poppins", sans-serif;
-            font-size:20px;
-            color:#38D155;
-        }
-        #banner-button {
-            margin-top:50px;
-        }
-
-        #tiles{
-            background-color: #08BD27;
-            //background-color: #9FDF5C;
-            color:#FFFFFF;
-
-        }
-
-        #footer {
-            background-color:#000000;
-        }
-        #footer2 {
-            background-color:#08BD27;
-            height:auto;
-        }
-       /* body {
-            height:100%;
-            background-color: #000000;
-            //color: #FFFFFF;
-            font-family: "Courier New", sans-serif;
-        }
-        a {
-            font-size:15px;
-        }
-        a:link, a:visited {
-            color: chartreuse;
-        }
-        a:hover {
-            color: forestgreen;
-        }*/
-    </style>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 <body>
 
+<!-- Start Menu -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://spoonboy.io">
@@ -150,8 +55,8 @@
                         Dozer - Webhooks for Morpheus
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="https://github.com/spoonboy-io/dujour">
-                        Dujour - JSON/CSV static file server
+                    <a class="navbar-item" href="/projects/dujour-json-csv-file-server">
+                        Dujour - JSON/CSV File Server
                     </a>
                 </div>
             </div>
@@ -179,18 +84,12 @@
 
         <div class="navbar-end">
             <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary is-small" style="background-color:#38D155;" href="https://github.com/spoonboy-io">
-                        <strong>Github</strong>
-                    </a>
-                   <!-- <a class="button is-ghost is-small">
-                       <strong>Twitter</strong>
-                    </a>-->
-                </div>
+
             </div>
         </div>
     </div>
 </nav>
+<!-- End Menu -->
 
 <section id="banner" class="section is-large">
     <div class="container">
@@ -236,128 +135,84 @@
         </div>
     </div>
 </section>
-
-
-
-<section class="section">
-    <div class="container">
-        <div class="notification is-primary">
-            This container has a <code>max-width</code> of <code>$desktop - $container-offset</code> on widescreen and fullhd.
-        </div>
-    </div>
-</section>
-
-
-<section class="section" id="tiles">
-
-    <div class="container is-fullhd">
-        <h2 class="title has-text-white has-text-centered">Projects &amp; Plugins</h2>
-        <p class="has-text-white has-text-centered">Some of the things recently developed by the Spoon Boy Project</p>
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-12">
-                <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification sp-green-4">
-                            <h3>Dujour</h3>
-                            <h4 class="subtitle">Webhooks for Morpheus</h4>
-                            <div class="content">
-                                Lots of shit
-                            </div>
-                        </article>
-                        <article class="tile is-child notification sp-green-5">
-                            <h3>Dujour</h3>
-                            <h4 class="subtitle">Webhooks for Morpheus</h4>
-                            <div class="content">
-                                Lots of shit
-                            </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification sp-green-3">
-                            <h3>Dujour</h3>
-                            <h4 class="subtitle">Webhooks for Morpheus</h4>
-                            <div class="content">
-                                Lots of shit
-                            </div>
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/640x480.png">
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child  notification sp-green-1">
-                        <h3>Dujour</h3>
-                        <h4 class="subtitle">Webhooks for Morpheus</h4>
-                        <div class="content">
-                            Lots of shit
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <!--
-            <div class="tile is-parent">
-                <article class="tile is-child notification sp-green-2">
-                    <div class="content">
-                        <p class="title">Tall tile</p>
-                        <p class="subtitle">With even more content</p>
-                        <div class="content">
-                            cotent
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<section class="section">
-    <div class="container is-fullhd">
-        <h1 class="title">
-            Spoon Boy
-        </h1>
-        <h2 class="subtitle">
-
-        </h2>
-    </div>
-</section>
-
-
-<section class="section">
-    <div class="container is-fullhd">
-        <h1 class="title">
-            Spoon Boy
-        </h1>
-        <h2 class="subtitle">
-
-        </h2>
-    </div>
-</section>
-
-
-<section class="section">
-    <div class="container is-fullhd">
-        <h1 class="title">
-            Spoon Boy
-        </h1>
-        <h2 class="subtitle">
-
-        </h2>
-    </div>
-</section>
-
-<section id="footer" class="section is-medium">
-    <div class="container is-fullhd">
-        <h1 class="title">
-           Footer
-        </h1>
-        <h2 class="subtitle">
-
-        </h2>
-    </div>
-</section>
 -->
+
+<!-- temp spacer -->
+<section class="section sp-green-1">
+    <div class="container is-fullhd">
+      &nbsp;
+    </div>
+</section>
+
+<!-- Start Footer -->
+<section id="footer" class="section">
+    <div class="container is-fullhd">
+        <div class="columns">
+            <div class="column">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="/"><img src="/images/logo-white.svg" width="160"></a>
+                    </div>
+                    <div class="footer-social">
+                        <a target="_blank" href="https://github.com/spoonboy-io"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a target="_blank" href="https://twitter.com/spoonboyio"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="clear-both">&nbsp;</div>
+                </div>
+
+                <div class="footer-primary">
+
+                    <div class="columns">
+                        <div class="column is-one-fifth">
+                            <p class="footer-primary-left-title">Projects</p>
+                            <ul>
+                                <li><a href="https://github.com/spoonboy-io/dozer">Dozer - Webhooks for Morpheus</a></li>
+                                <li><a href="/projects/dujour-json-csv-file-server">Dujour - JSON/CSV File Server</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-half">
+                            <p class="footer-primary-left-title">Plugins</p>
+                            <ul>
+                                <li><a href="https://github.com/spoonboy-io/morpheus-nodejs-task-plugin">Node.js Task Plugin</a></li>
+                                <li><a href="https://github.com/spoonboy-io/morpheus-golang-task-plugin">Golang Task Plugin</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">&nbsp;</div>
+
+                        <div class="column">
+                            <p class="footer-primary-right-title">Resources</p>
+                            <ul>
+                                <li><a href="#">Articles - soon</a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/channel/UCj9bLNL8n65sY0Ys4cVUjZA">Videos</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <p class="footer-primary-right-title">Other</p>
+                            <ul>
+                                <li><a href="#">About - soon</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-secondary">
+                    <div class="footer-secondary-left mobile-full">
+                        &copy; Copyright 2022 Spoon Boy&nbsp;
+                    </div>
+                    <div class="footer-secondary-right mobile-full">
+                        <a href="/legal/terms-of-use">Terms of Use</a> | <a href="/legal/cookies-policy">Cookies Policy</a> | <a href="/legal/privacy">Privacy</a>
+                    </div>
+
+                    <div class="clear-both">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Footer -->
+
 </body>
 </html>
