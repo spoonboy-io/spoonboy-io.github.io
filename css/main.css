@@ -97,6 +97,23 @@ p {
     color:#38D155;
 }
 
+#banner-info{
+    color:#FFFFFF;
+    background: #000000 url("/images/banner-background-2.png") no-repeat right top;
+    border-bottom:10px solid #9FDF5C;
+}
+
+#intro-info h1{
+    font-family: "Poppins", sans-serif;
+    font-size:50px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+#about-cards {
+    background-color:#eeeeee;
+}
+
 #meta-project {
     background-color:#9FDF5C;
     padding-top:30px;

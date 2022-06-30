@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Spoonboy.io</title>
-    <meta name="description" content="Golang, morpheus, go, plugins and applications">
-    <meta name="keywords" content="golang, morpheus, go, plugins, applications">
+    <title>Spoonboy.io - About Spoon Boy</title>
+    <meta name="description" content="Information about the Spoon Boy project.">
+    <meta name="keywords" content="about, spoon boy, information">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/bulma-steps.min.css">
     <script src="https://kit.fontawesome.com/b74b7fc428.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/main.js"></script>
+    <script src="/js/bulma-steps.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
@@ -103,57 +105,155 @@
 </nav>
 <!-- End Menu -->
 
-<section id="banner" class="section is-large">
+<!-- Start Info Banner -->
+<section id="banner-info" class="section is-small">
     <div class="container">
         <div id="banner-top">
-            <h1>
-                Spoon Boy
-            </h1>
-            <h2>
-                Applications, plugins, tooling and more, for Morpheus Cloud Management Platform
-            </h2>
-        </div>
-        <div id="banner-button">
-            <a href="https://github.com/spoonboy-io">
-                <button class="button is-dark is-medium">View Projects</button>
-            </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/spoonboy-io">
-                <button class="button is-dark is-medium">Learn More</button>
-            </a>
+            &nbsp;
         </div>
     </div>
 </section>
+<!-- End InfoBanner -->
 
-<!--
-<section class="section">
+<!-- Start InfoIntro -->
+<section id="intro-info" class="section">
     <div class="container is-fullhd">
-        <h2 class="title has-text-centere">
-           Spoon Boy for Morpheus
-        </h2>
+
         <div class="columns">
             <div class="column">
-                <h3>Welcome!</h3>
-                <p>If you're here you are likely a Morpheus Cloud Management Platform Customer or Partner, or maybe Employee :)</p>
-                <p>There's a small chance you are lost I guess, but welcome anyway!</p>
-                <h3>So what is Spoon Boy?</h3>
-                <p>It's a growing suite of applications, plugins and tooling for Morpheus that users of Morpheus might find useful.</p>
-            </div>
-            <div class="column">
-                <h3>Who is Spoon Boy?</h3>
-                <p>It's a project by Ollie Phillips a Golang engineer and ex-Morpheus field engineer.</p>
-                <p>Most of the things you can find here were developed</p>
+                <h1>
+                    About Spoon Boy
+                </h1>
             </div>
         </div>
+
+        <div class="columns">
+
+            <div class="column">
+                <p>
+                    Spoon Boy offers a growing collection of applications, plugins
+                    and tooling, mainly for use with <a href="https://morpheusdata.com" target="_blank">Morpheus Cloud Management Platform (CMP)</a>.
+                </p>
+
+                <p>
+                    Aimed at the Morpheus user community, Spoon Boy is a project by Ollie Phillips, Golang Engineer, ex-Morpheus Data,
+                    Certified Morpheus Administrator and Certified Morpheus Engineer.
+                </p>
+
+            </div>
+
+            <div class="column">
+                <p>
+                    Morpheus CMP is a powerful self-service engine offering enterprise agility,
+                    control, and efficiency. It unifies the tools you already use and standardises processes - and UI -
+                    for public and private cloud.
+                </p>
+                <p>
+                    Morpheus performs complete application lifecycle management covering provisioning, backup, logging,
+                    monitoring, reporting, and access control.
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
--->
+<!-- End Intro -->
 
-<!-- temp spacer -->
-<section class="section sp-green-1">
+<section id="about-cards" class="section">
+    <!-- Start Key features -->
     <div class="container is-fullhd">
-      &nbsp;
+
+        <div class="columns">
+
+            <div class="column is-two-thirds">
+            <div class="columns">
+                <div class="column">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="up-icon color-key-icon fa-solid fa-code fa-2x"></i>
+                                </div>
+                                <div class="media-content">
+                                    <h3 class="title is-4">Application Development</h3>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p>
+                                    Applications and tooling, designed to support and add-value to your day-to-day Morpheus activities.
+                                </p>
+                                <p>Examples:</p>
+                                <ul>
+                                    <li>Dujour - A JSON/CSV file server designed specifically to help you surface and maintain data for Morpheus Option Lists.</li>
+                                    <li>Dozer - Webhooks for Morpheus processes. Send data about Morpheus events as they occur to external applications via webhooks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="up-icon color-key-icon fa-solid fa-cubes fa-2x"></i>
+                                </div>
+                                <div class="media-content">
+                                    <h3 class="title is-4">Plugin Development</h3>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p>
+                                    Building on the Morpheus Plugin API, you can find a number of plugins which extend the core Morpheus functionality.
+                                </p>
+                                <p>Examples:</p>
+                                <ul>
+                                    <li>Node.js Task - Script your Morpheus automations in Node.js; advantage of modern language syntax and Node modules.</li>
+                                    <li>Golang Task - Prefer Go? No problem. Take advantage of Go's powerful standard library in your automations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+                <div class="column">
+
+                    <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="up-icon color-key-icon fa-solid fa-graduation-cap fa-2x"></i>
+                        </div>
+                        <div class="media-content">
+                            <h3 class="title is-4">Certifications</h3>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <!-- Certs-->
+                        <div class="columns">
+                            <div class="column" style="text-align:center;">
+                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a9db6966-898e-4537-a985-b2a92395713b" data-share-badge-host="https://www.credly.com"></div>
+                                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                            </div>
+                            <div class="column" style="text-align:center;">
+                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="06d1d0c3-8d88-4dc0-82fa-9024562f3361" data-share-badge-host="https://www.credly.com"></div>
+                                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
 </section>
 
 <!-- Start Footer -->
