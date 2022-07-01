@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Spoonboy.io - About Spoon Boy</title>
-    <meta name="description" content="Information about the Spoon Boy project.">
-    <meta name="keywords" content="about, spoon boy, information">
+    <title>Spoonboy.io - Dozer, Webhooks for Morpheus</title>
+    <meta name="description" content="Dozer watches Morpheus CMP processes/events. It will notify external applications of Morpheus events via HTTP request (webhook) based on YAML configuration you specify.">
+    <meta name="keywords" content="webhooks, processes, events, morpheus">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="/css/bulma-steps.min.css">
@@ -105,156 +105,218 @@
 </nav>
 <!-- End Menu -->
 
-<!-- Start Info Banner -->
-<section id="banner-info" class="section is-small">
+<!-- Start Banner -->
+<section id="banner-project" class="section is-small">
     <div class="container">
         <div id="banner-top">
-            &nbsp;
+            <h1>
+                Dozer
+            </h1>
+            <h2>
+                Webhooks for Morpheus Processes
+            </h2>
         </div>
     </div>
 </section>
-<!-- End InfoBanner -->
+<!-- End Banner -->
 
-<!-- Start InfoIntro -->
-<section id="intro-info" class="section">
+<!-- Start Intro -->
+<section id="intro-project" class="section">
     <div class="container is-fullhd">
 
-        <div class="columns">
-            <div class="column">
-                <h1>
-                    About Spoon Boy
-                </h1>
-            </div>
-        </div>
 
         <div class="columns">
-
             <div class="column">
+                <h2 class="mb-5">
+                    Send notifications and share information about Morpheus Processes
+                </h2>
                 <p>
-                    Spoon Boy offers a growing collection of applications, plugins
-                    and tooling, mainly for use with <a href="https://morpheusdata.com" target="_blank">Morpheus Cloud Management Platform (CMP)</a>.
+                    Morpheus performs a wide array of operations in its role as your Cloud Management Platform and though
+                    there are some ways to send notifications, for example, in a task within a workflow,
+                    the majority of operations which run day-to-day (and often unattended in the background), do not
+                    provide for this. What if you could configure notifications on - and share information about - all Morpheus operations?
                 </p>
-
                 <p>
-                    Aimed at the Morpheus user community, Spoon Boy is a project by Ollie Phillips, Golang Engineer, ex-Morpheus Data,
-                    Certified Morpheus Administrator and Certified Morpheus Engineer.
-                </p>
 
+                    With Dozer, Morpheus users can do exactly this; choose to watch specific Morpheus processes and events.
+                    Using simple YAML configuration, Dozer facilitates the creation of Webhooks which when triggered,
+                    send notifications and share information about Morpheus processes, to your external applications.
+                </p>
+                <p>Why not watch the demonstration opposite where Dozer is configured to send notifications about Morpheus to Slack?</p>
             </div>
-
             <div class="column">
-                <p>
-                    Morpheus CMP is a powerful self-service engine offering enterprise agility,
-                    control, and efficiency. It unifies the tools you already use and standardises processes - and UI -
-                    for public and private cloud.
-                </p>
-                <p>
-                    Morpheus performs complete application lifecycle management covering provisioning, backup, logging,
-                    monitoring, reporting, and access control.
-                </p>
+                <div class="show-mobile" style="text-align:center;">
+                    <a href="https://youtu.be/hb4pLhovUqw"><button class="button is-link is-large">Watch Video</button></a>
+                </div>
+                <div class="drop-mobile">
+                    <iframe width="660" height="396" src="https://www.youtube.com/embed/hb4pLhovUqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-
     </div>
 </section>
 <!-- End Intro -->
 
-<section id="about-cards" class="section">
-    <!-- Start Key features -->
+<!-- Start Getting Started -->
+<section id="getting-started" class="section">
     <div class="container is-fullhd">
+        <h2 class="mb-4 has-text-centered">
+            Getting Started
+        </h2>
+        <p class="has-text-centered">Dozer can be installed and configured in minutes...</p>
 
         <div class="columns">
+            <div class="column">
 
-            <div class="column is-two-thirds">
-            <div class="columns">
-                <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-solid fa-download fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Install Dozer</h3>
+                            </div>
+                        </div>
 
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <i class="up-icon color-key-icon fa-solid fa-code fa-2x"></i>
-                                </div>
-                                <div class="media-content">
-                                    <h3 class="title is-4">Application Development</h3>
-                                </div>
+                        <div class="content">
+                            <p>
+                                Dozer is available for Linux and Mac OS and can be found on Github. It may be hosted on the same server as the Morpheus Appliance or on a seprate VM.
+                            </p>
+                            <p>
+                                Download a release to the server and unpack the gzipped package.
+                            </p>
+                            <div>
+<pre style="height:77px;">
+wget https://github.com/spoonboy-io/dozer/releases/download/v0.0.1/dozer_0.0.1_Linux_x86_64.tar.gz
+tar -xvf dozer_0.0.1_Linux_x86_64.tar.gz
+</pre>
                             </div>
 
-                            <div class="content">
-                                <p>
-                                    Applications and tooling, designed to support and add-value to your day-to-day Morpheus activities.
-                                </p>
-                                <p>Examples:</p>
-                                <ul>
-                                    <li>Dujour - A JSON/CSV file server designed specifically to help you surface and maintain data for Morpheus Option Lists.</li>
-                                    <li>Dozer - Webhooks for Morpheus processes. Send data about Morpheus events as they occur to external applications via webhooks.</li>
-                                </ul>
+                            <p>Run the Dozer application</p>
+                            <div>
+<pre style="height:60px;">
+./dozer
+</pre>
                             </div>
                         </div>
                     </div>
-                    <br/>
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <i class="up-icon color-key-icon fa-solid fa-cubes fa-2x"></i>
-                                </div>
-                                <div class="media-content">
-                                    <h3 class="title is-4">Plugin Development</h3>
-                                </div>
-                            </div>
+                </div>
 
-                            <div class="content">
-                                <p>
-                                    Building on the Morpheus Plugin API, you can find a number of plugins which extend the core Morpheus functionality.
-                                </p>
-                                <p>Examples:</p>
-                                <ul>
-                                    <li>Node.js Task - Script your Morpheus automations in Node.js; advantage of modern language syntax and Node modules.</li>
-                                    <li>Golang Task - Prefer Go? No problem. Take advantage of Go's powerful standard library in your automations.</li>
-                                </ul>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-solid fa-database fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Configure MySQL Access</h3>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Dozer polls the Morpheus MySQL database so needs access. It's recommended to create an additional MySQL user, with grants limited to select (read) only.
+                            </p>
+                            <p>
+                                Create a `mysql.env` file in sthe same directory as Morpheus and add your database configuration.
+                            </p>
+                            <div>
+<pre style="height:190px;">
+## MySQL Config
+MYSQL_SERVER=morpheus-server
+MYSQL_USER=dozer
+MYSQL_PASSWORD=Password123?
+
+## Optional Dozer Config
+#POLL_INTERVAL_SECONDS=3    
+</pre>                                
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="column">
 
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-solid fa-code-pull-request fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Configure a Webhook</h3>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Create `webhook.yaml` file in the same directory as Dozer and then add a Webhook.
+                            </p>
+                            <p>
+                                In the example below, Dozer will watch the Morpheus process type 'localWorkflow' and send notifications to Slack.
+                            </p>
+                            <div>
+<pre style="height:190px;">
+- webhook:
+    description:&nbsp;Task&nbsp;finished&nbsp;notification&nbsp;to&nbsp;Slack
+    url: https://hooks.slack.com/services/T03XXXBXXQ/B03MXXXXJVC/3FGjXXXXXXXXmUTca
+    method: POST
+    requestBody: |
+        {"text":"Task: '{{.TaskName}}' created by '{{.CreatedBy}}' has completed with status: '{{.Status}}'. Happy Days!"}
+    token:
+    triggers:
+        processType: localWorkflow
+</pre>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-                <div class="column">
 
-                    <div class="card">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="up-icon color-key-icon fa-solid fa-graduation-cap fa-2x"></i>
-                        </div>
-                        <div class="media-content">
-                            <h3 class="title is-4">Certifications</h3>
-                        </div>
-                    </div>
+    </div>
+</section>
+<!-- End Getting Started -->
 
-                    <div class="content">
-                        <!-- Certs-->
-                        <div class="columns">
-                            <div class="column" style="text-align:center;">
-                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a9db6966-898e-4537-a985-b2a92395713b" data-share-badge-host="https://www.credly.com"></div>
-                                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                            </div>
-                            <div class="column" style="text-align:center;">
-                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="06d1d0c3-8d88-4dc0-82fa-9024562f3361" data-share-badge-host="https://www.credly.com"></div>
-                                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                            </div>
-                        </div>
-                    </div>
+
+
+<!-- Start Meta -->
+<section id="meta-project" class="section is-small">
+    <div class="container is-fullhd">
+
+        <div class="level">
+            <div class="tags level-left">
+                <span class="tag is-link">golang</span>
+                <span class="tag is-link">morpheus</span>
+                <span class="tag is-link">webhooks</span>
+                <span class="tag is-link">notification</span>
+                <span class="tag is-link">process</span>
+            </div>
+
+            <div class="level-right">
+                <div style="margin-top:-20px;">
+                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/subscription" data-show-count="true" aria-label="Watch spoonboy-io/dozer on GitHub">Watch</a>
+
+                    <a class="github-button" href="https://github.com/spoonboy-io/dozer" data-show-count="true" aria-label="Star spoonboy-io/dozer on GitHub">Star</a>
+
+                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/issues" data-show-count="true" aria-label="Issue spoonboy-io/dozer on GitHub">Issue</a>
+
+                    <a class="github-button" href="https://github.com/sponsors/spoonboy-io" aria-label="Sponsor @spoonboy-io on GitHub">Sponsor</a>
+
+                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/archive/HEAD.zip" aria-label="Download spoonboy-io/dozer on GitHub">Download Source</a>
                 </div>
             </div>
 
         </div>
 
     </div>
-
 </section>
+<!-- End Meta -->
 
 <!-- Start Footer -->
 <section id="footer" class="section">

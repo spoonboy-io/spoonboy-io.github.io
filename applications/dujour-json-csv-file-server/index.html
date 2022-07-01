@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Spoonboy.io - Dozer, Webhooks for Morpheus</title>
-    <meta name="description" content="Dozer watches Morpheus CMP processes/events. It will notify external applications of Morpheus events via HTTP request (webhook) based on YAML configuration you specify.">
-    <meta name="keywords" content="webhooks, processes, events, morpheus">
+    <title>Spoonboy.io - Dujour JSON/CSV File Server</title>
+    <meta name="description" content="Dujour takes static data files (currently JSON or CSV), it converts them where necessary and hosts each file on a simple queryable REST API - perfect for Morpheus Option Lists! It supports TLS and data can be hot-reloaded, making automated updates, possible.">
+    <meta name="keywords" content="json server, csv server, file server, morpheus, option list">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="/css/bulma-steps.min.css">
@@ -55,15 +55,15 @@
 
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
-                    Projects
+                    Applications
                 </a>
 
                 <div class="navbar-dropdown">
-                    <a class="navbar-item" href="/projects/dozer-webhooks-for-morpheus">
+                    <a class="navbar-item" href="/applications/dozer-webhooks-for-morpheus">
                         Dozer - Webhooks for Morpheus
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="/projects/dujour-json-csv-file-server">
+                    <a class="navbar-item" href="/applications/dujour-json-csv-file-server">
                         Dujour - JSON/CSV File Server
                     </a>
                 </div>
@@ -124,9 +124,9 @@
 <section id="intro-project" class="section">
     <div class="container is-fullhd">
 
-        <h3 class="mb-5">
+        <h2 class="mb-5">
             Need data? Of course you do.
-        </h3>
+        </h2>
         <div class="columns">
             <div class="column">
                 <p>
@@ -385,14 +385,16 @@
                         </div>
 
                         <div class="content">
-                            <p>Dujour does not just serve the entire data file at one endpoint, a second API endpoint is also created which makes it possible to query the file for single items based on 'id'</p>
+                            <p>Dujour does not just serve the entire data file at one endpoint, a second API endpoint makes it possible to query the file for single items based on 'id'</p>
                             <p>Simply ensure the data file contains an `id` field/column and that's it.
                             Each data set will serve at two endpoints:</p>
 
-                            <div class="sp-code">
-                                GET https://$serverUrl/api/users<br/>
-                                GET https://$serverUrlapi/users/$id
-                                </div>
+                            <div>
+<pre style="height:75px;">
+GET https://$serverUrl/api/users
+GET https://$serverUrlapi/users/$id
+</pre>
+                            </div>
 
                         </div>
                     </div>
@@ -419,15 +421,15 @@
 
             <div class="level-right">
                 <div style="margin-top:-20px;">
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/subscription" data-show-count="true" aria-label="Watch spoonboy-io/dozer on GitHub">Watch</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/dujour/subscription" data-show-count="true" aria-label="Watch spoonboy-io/dujour on GitHub">Watch</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer" data-show-count="true" aria-label="Star spoonboy-io/dozer on GitHub">Star</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/dujour" data-show-count="true" aria-label="Star spoonboy-io/dujour on GitHub">Star</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/issues" data-show-count="true" aria-label="Issue spoonboy-io/dozer on GitHub">Issue</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/dujour/issues" data-show-count="true" aria-label="Issue spoonboy-io/dujour on GitHub">Issue</a>
 
                     <a class="github-button" href="https://github.com/sponsors/spoonboy-io" aria-label="Sponsor @spoonboy-io on GitHub">Sponsor</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/archive/HEAD.zip" aria-label="Download spoonboy-io/dozer on GitHub">Download Source</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/dujour/archive/HEAD.zip" aria-label="Download spoonboy-io/dujour on GitHub">Download Source</a>
                 </div>
             </div>
 
@@ -460,8 +462,8 @@
                         <div class="column is-one-fifth">
                             <p class="footer-primary-left-title">Projects</p>
                             <ul>
-                                <li><a href="/projects/dozer-webhooks-for-morpheus">Dozer - Webhooks for Morpheus</a></li>
-                                <li><a href="/projects/dujour-json-csv-file-server">Dujour - JSON/CSV File Server</a></li>
+                                <li><a href="/applications/dozer-webhooks-for-morpheus">Dozer - Webhooks for Morpheus</a></li>
+                                <li><a href="/applications/dujour-json-csv-file-server">Dujour - JSON/CSV File Server</a></li>
                             </ul>
                         </div>
                         <div class="column is-half">

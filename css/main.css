@@ -128,6 +128,35 @@ p {
     background-color:#eeeeee;
 }
 
+#getting-started{
+    background-color:#03A844;
+    color:#FFFFFF;
+}
+
+#getting-started .card {
+    background-color: #C0F4BF;
+}
+#getting-started .sp-code{
+    background-color: #eeeeee;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 5px solid #72CA53;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-bottom: 1.0em;
+    max-width: 380px;
+    overflow: auto;
+
+    display: block;
+    word-wrap: break-word;
+}
+
 .table-project th, .table-project td {
     text-align:center!important;
 
@@ -254,6 +283,15 @@ p {
     font-size:16px;
 }
 
+. {
+    max-width:380px;
+    overflow:auto;
+}
+
+.gist .blob-wrapper.data {
+    max-height:200px;
+    overflow:auto;
+}
 
 /* Media for mobile */
 @media screen and (min-width: 0px) and (max-width: 920px) {
