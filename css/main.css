@@ -5,15 +5,27 @@
 }
 .sp-green-2{
     background-color:#72CA53;
+    color:#FFFFFF;
 }
 .sp-green-3{
     background-color:#03A844;
+    color:#FFFFFF;
 }
 .sp-green-4{
     background-color:#036928;
+    color:#FFFFFF;
 }
 .sp-green-5{
     background-color:#023A16;
+    color:#FFFFFF;
+}
+.sp-black{
+    background-color:#000000;
+    color:#FFFFFF;
+}
+.sp-grey{
+    background-color:#999999;
+    color:#FFFFFF;
 }
 
 .color-true{
@@ -30,6 +42,19 @@
 }
 .up-icon{
     margin-top:-4px;
+}
+.down-icon{
+    margin-top:10px;
+    margin-right:20px;
+}
+article a:link, article a:visited{
+    text-decoration:none!important;
+}
+.icon-bg {
+    background:#FFFFFF;
+    padding:15px;
+    padding-bottom:10px;
+    border-radius:5px;
 }
 .sp-code{
     font-family:"Courier New", sans-serif;
@@ -111,6 +136,10 @@ p {
 }
 
 #about-cards {
+    background-color:#eeeeee;
+}
+
+#projects-list {
     background-color:#eeeeee;
 }
 
