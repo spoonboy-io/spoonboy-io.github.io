@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Spoonboy.io - Dozer, Webhooks for Morpheus</title>
-    <meta name="description" content="Dozer watches Morpheus CMP processes/events. It will notify external applications of Morpheus events via HTTP request (webhook) based on YAML configuration you specify.">
-    <meta name="keywords" content="webhooks, processes, events, morpheus">
+    <title>Spoonboy.io - Switch, JSON preprocessor for use with Morpheus option lists</title>
+    <meta name="description" content="Switch performs preprocessing on JSON data. Designed to simplify Morpheus option list creation and management, Switch can fetch a target URL and parse it, creating name and value keys in a new JSON file according to the YAML configuration rules provided">
+    <meta name="keywords" content="json, option lists, rest, morpheus">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/bulma.min.css">
     <link rel="stylesheet" href="/css/bulma-steps.min.css">
@@ -129,10 +129,10 @@
     <div class="container">
         <div id="banner-top">
             <h1>
-                Dozer
+                Switch
             </h1>
             <h2>
-                Webhooks for Morpheus Processes
+                Preprocess JSON data to `name` and `value` keys
             </h2>
         </div>
     </div>
@@ -141,34 +141,50 @@
 
 <!-- Start Intro -->
 <section id="intro-project" class="section is-medium">
+
+    <div class="container is-fullhd">
+        <div class="columns">
+            <div class="column">
+                <h2 class="mb-5">
+                    Switch simplifies Morpheus option list creation by creating easy-to-</br>consume JSON files from your complex REST data sources
+                </h2>
+            </div>
+        </div>
+    </div>
+
     <div class="container is-fullhd">
 
 
         <div class="columns">
             <div class="column">
-                <h2 class="mb-5">
-                    Send notifications and share information about Morpheus Processes
-                </h2>
                 <p>
-                    Morpheus performs a wide array of operations in its role as your Cloud Management Platform and though
-                    there are some ways to send notifications, for example, in a task within a workflow,
-                    the majority of operations which run day-to-day (and often unattended in the background), do not
-                    provide for this. What if you could configure notifications on - and share information about - all Morpheus operations?
+                    Switch performs preprocessing on JSON data. Designed to simplify Morpheus option list creation and management, Switch can fetch a target URL and parse it,
+                    creating name and value keys in a new JSON file according to the YAML configuration rules provided.
                 </p>
                 <p>
-
-                    With Dozer, Morpheus users can do exactly this; choose to watch specific Morpheus processes and events.
-                    Using simple YAML configuration, Dozer facilitates the creation of Webhooks which when triggered,
-                    send notifications and share information about Morpheus processes, to your external applications.
+                    Switch can manage multiple source files, and, using a Time to Live (TTL) for each source it will refresh the data at the specified interval.
+                    Switch saves the data as a new JSON file in a location you specify. Any web server can serve it, you could also use the <a href="/applications/dujour-json-csv-file-server">Dujour JSON/CSV data file server</a>.
                 </p>
-                <p>Why not watch the demonstration opposite where Dozer is configured to send notifications about Morpheus to Slack?</p>
+                <p>
+                    Formulating the JavaScript for Morpheus Option List REST translation scripts can be complex, while any JSON file which presents as an array of name and value keys,
+                    needs no translation script whatsoever since Morpheus is able to interpret it automatically.
+                </p>
+                <p>
+                    So, Switch takes a complex JSON payload, which would require a translation script to parse in Morpheus, and creates a simple representation of the data needed for the option list.
+                   </p>
+                <p> Basic use, requires no translation script, more complicated use (such as dependent inputs) will mean any translation script is much simplified.
+                </p>
             </div>
             <div class="column">
                 <div class="show-mobile" style="text-align:center;">
-                    <a href="https://youtu.be/hb4pLhovUqw"><button class="button is-link is-large">Watch Video</button></a>
+                    Video coming soon..
+                    <!--a href="https://youtu.be/hb4pLhovUqw"><button class="button is-link is-large">Watch Video</button></a>-->
                 </div>
                 <div class="drop-mobile">
-                    <iframe width="660" height="396" src="https://www.youtube.com/embed/hb4pLhovUqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div style="width:660px; height:396px;text-align:center;border:5px green solid;padding-top:180px">
+                        Video coming soon..
+                    </div>
+                    <!--<iframe width="660" height="396" src="https://www.youtube.com/embed/hb4pLhovUqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>
             </div>
         </div>
@@ -177,13 +193,13 @@
 <!-- End Intro -->
 
 <!-- Start Getting Started -->
-<section id="getting-started" class="section">
+<section id="getting-started-black" class="section">
     <div class="container is-fullhd">
         <h2 class="mb-4 has-text-centered">
-            Get started with Dozer
+            Get started with Switch
         </h2>
         <p class="has-text-centered">
-            Dozer can be installed and configured in minutes...
+           Switch is simple to install and configure...
         </p>
 
 
@@ -197,28 +213,28 @@
                                 <i class="up-icon color-key-icon fa-solid fa-download fa-2x"></i>
                             </div>
                             <div class="media-content">
-                                <h3 class="title is-4">Install Dozer</h3>
+                                <h3 class="title is-4">Install the application</h3>
                             </div>
                         </div>
 
                         <div class="content">
                             <p>
-                                Dozer is available for Linux and Mac OS and can be found on <a href="https://github.com/spoonboy-io/dozer">Github</a>. It may be hosted on the same server as the Morpheus Appliance or on a seprate VM.
+                                Switch is available for Linux and Mac OS and can be found on <a href="https://github.com/spoonboy-io/switch">Github</a>. It may be hosted on the same server as the Morpheus Appliance or on a separate VM.
                             </p>
                             <p>
-                                Download the <a href="https://github.com/spoonboy-io/dozer/releases/latest">latest release</a> to your server and unpack the gzipped package.
+                                Download the <a href="https://github.com/spoonboy-io/switch/releases/latest">latest release</a> to your server and unpack the gzipped package.
                             </p>
                             <div>
 <pre style="height:77px;">
-wget https://github.com/spoonboy-io/dozer/releases/download/v0.0.1/dozer_0.0.1_Linux_x86_64.tar.gz
-tar -xvf dozer_0.0.1_Linux_x86_64.tar.gz
+wget https://github.com/spoonboy-io/switch/releases/download/v0.0.1/switch_0.0.1_Linux_x86_64.tar.gz
+tar -xvf switch_0.0.1_Linux_x86_64.tar.gz
 </pre>
                             </div>
 
-                            <p>Run the Dozer application</p>
+                            <p>Run the Switch application</p>
                             <div>
 <pre style="height:60px;">
-./dozer
+./switch
 </pre>
                             </div>
                         </div>
@@ -226,6 +242,48 @@ tar -xvf dozer_0.0.1_Linux_x86_64.tar.gz
                 </div>
 
             </div>
+
+            <div class="column">
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-sharp fa-solid fa-cloud-arrow-down fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Configure a JSON source</h3>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Create a `sources.yaml` file in the same directory as Switch and configure it for your JSON source.
+                                A sample file is available <a href="https://github.com/spoonboy-io/switch/blob/master/sources.yaml">here</a>.
+                            </p>
+                            <p>Switch will fetch and process the data, to make a new json file qccording to this configuration</p>
+                            <div>
+<pre style="height:190px;">
+---
+- source:
+    description: Some blog posts (array)
+    url: https://jsonplaceholder.typicode.com/posts
+    token:
+    extract:
+        name: title
+        value: id
+    ttl: 5
+    save:
+        folder: test
+        filename: test.json
+</pre>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="column">
                 <div class="card">
                     <div class="card-content">
@@ -234,66 +292,31 @@ tar -xvf dozer_0.0.1_Linux_x86_64.tar.gz
                                 <i class="up-icon color-key-icon fa-solid fa-database fa-2x"></i>
                             </div>
                             <div class="media-content">
-                                <h3 class="title is-4">Configure MySQL Access</h3>
+                                <h3 class="title is-4">Serve your simplified JSON data</h3>
                             </div>
                         </div>
 
                         <div class="content">
                             <p>
-                                Dozer polls the Morpheus MySQL database so needs access. It's recommended to create an additional MySQL user, with grants limited to select (read) only.
-                            </p>
-                            <p>
-                                Create a `mysql.env` file in sthe same directory as Morpheus and add your database configuration.
+                                Switch can save data to any location on the same server, perhaps a webserver.
+                                If you run Dujour on the same VM, you can also save it there, and Dujour will serve it.
                             </p>
                             <div>
-<pre style="height:190px;">
-## MySQL Config
-MYSQL_SERVER=morpheus-server
-MYSQL_USER=dozer
-MYSQL_PASSWORD=Password123?
-
-## Optional Dozer Config
-#POLL_INTERVAL_SECONDS=3    
-</pre>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-
-                <div class="card">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <i class="up-icon color-key-icon fa-solid fa-code-pull-request fa-2x"></i>
-                            </div>
-                            <div class="media-content">
-                                <h3 class="title is-4">Configure a Webhook</h3>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <p>
-                                Create `webhook.yaml` file in the same directory as Dozer and then add a Webhook.
-                            </p>
-                            <p>
-                                In the example below, Dozer will watch the Morpheus process type 'localWorkflow' and send notifications to Slack.
-                            </p>
-                            <div>
-<pre style="height:190px;">
-- webhook:
-    description:&nbsp;Task&nbsp;finished&nbsp;notification&nbsp;to&nbsp;Slack
-    url: https://hooks.slack.com/services/T03XXXBXXQ/B03MXXXXJVC/3FGjXXXXXXXXmUTca
-    method: POST
-    requestBody: |
-        {"text":"Task: '{{.TaskName}}' created by '{{.CreatedBy}}' has completed with status: '{{.Status}}'. Happy Days!"}
-    token:
-    triggers:
-        processType: localWorkflow
+<pre style="height:90px;">
+    save:
+        folder: test
+        filename: test.json
 </pre>
                             </div>
 
+                            <p>
+                                Switch will use the TTL value (specified in minutes) to expire and refresh the data.
+                            </p>
+                            <div>
+<pre style="height:65px;">
+    ttl: 5
+</pre>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -315,22 +338,22 @@ MYSQL_PASSWORD=Password123?
             <div class="tags level-left">
                 <span class="tag is-link">golang</span>
                 <span class="tag is-link">morpheus</span>
-                <span class="tag is-link">webhooks</span>
-                <span class="tag is-link">notification</span>
-                <span class="tag is-link">process</span>
+                <span class="tag is-link">json</span>
+                <span class="tag is-link">option lists</span>
+                <span class="tag is-link">rest</span>
             </div>
 
             <div class="level-right">
                 <div style="margin-top:-20px;">
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/subscription" data-show-count="true" aria-label="Watch spoonboy-io/dozer on GitHub">Watch</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/switch/subscription" data-show-count="true" aria-label="Watch spoonboy-io/switch on GitHub">Watch</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer" data-show-count="true" aria-label="Star spoonboy-io/dozer on GitHub">Star</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/switch" data-show-count="true" aria-label="Star spoonboy-io/switch on GitHub">Star</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/issues" data-show-count="true" aria-label="Issue spoonboy-io/dozer on GitHub">Issue</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/switch/issues" data-show-count="true" aria-label="Issue spoonboy-io/switch on GitHub">Issue</a>
 
                     <a class="github-button" href="https://github.com/sponsors/spoonboy-io" aria-label="Sponsor @spoonboy-io on GitHub">Sponsor</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/dozer/archive/HEAD.zip" aria-label="Download spoonboy-io/dozer on GitHub">Download Source</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/switch/archive/HEAD.zip" aria-label="Download spoonboy-io/switch on GitHub">Download Source</a>
                 </div>
             </div>
 
