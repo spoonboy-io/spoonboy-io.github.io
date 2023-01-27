@@ -192,6 +192,130 @@
 </section>
 <!-- End Intro -->
 
+<!-- Start Features -->
+<section id="features-project" class="section">
+    <div class="container is-fullhd">
+        <h2 class="mb-4 has-text-centered">
+            JSON that is option list ready
+        </h2>
+        <p class="has-text-centered">Switch extracts the data you need into name and value keys. No complex translation scripts are required for basic use. </p>
+        <div class="columns">
+            <div class="column ">
+                <h4>Transform this data</h4>
+                <div>
+<pre style="height:230px; max-width:430px!important;">
+{
+  "items": {
+    "item": [
+      {
+        "batters": {
+          "batter": [
+            {
+              "id": "1001",
+              "type": "Regular"
+            },
+            {
+              "id": "1002",
+              "type": "Chocolate"
+            },
+            {
+              "id": "1003",
+              "type": "Blueberry"
+            },
+            {
+              "id": "1004",
+              "type": "Devil's Food"
+            }
+          ]
+        },
+        "id": "0001",
+        "name": "Cake",
+        "ppu": 0.55,
+        "topping": [
+          {
+            "id": "5001",
+            "type": "None"
+          },
+          {
+            "id": "5002",
+            "type": "Glazed"
+          },
+          {
+            "id": "5005",
+            "type": "Sugar"
+          },
+          {
+            "id": "5007",
+            "type": "Powdered Sugar"
+          },
+          {
+            "id": "5006",
+            "type": "Chocolate with Sprinkles"
+          },
+          {
+            "id": "5003",
+            "type": "Chocolate"
+          },
+          {
+            "id": "5004",
+            "type": "Maple"
+          }
+        ],
+        "type": "donut"
+      }
+    ]
+  }
+}
+</pre>
+                </div>
+            </div>
+
+            <div class="column">
+                <h4>Into this data</h4>
+                <div>
+                    <pre style="height:230px; max-width:430px!important;">
+[{
+	"name": "Regular",
+	"value": "1001"
+}, {
+	"name": "Chocolate",
+	"value": "1002"
+}, {
+	"name": "Blueberry",
+	"value": "1003"
+}, {
+	"name": "Devil's Food",
+	"value": "1004"
+}]
+</pre>
+                </div>
+            </div>
+
+            <div class="column">
+                <h4>So you don't need to write this</h4>
+                <div>
+ <pre style="height:230px; max-width:430px!important;">
+// extract data to name and value using the JavaScript
+
+for (var x = 0; x < data.items.item[0].batters.batter.length; x++) {
+  results.push(
+     {
+        name: data.items.item[0].batters.batter[x].type,
+        value: data.items.item[0].batters.batter[x].id
+     }
+  );
+}
+</pre>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Features -->
+
+
 <!-- Start Getting Started -->
 <section id="getting-started-black" class="section">
     <div class="container is-fullhd">
