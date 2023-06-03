@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function(event){
   // simple test
   console.log("snippets are go!");
   
+  // get the page 
+  let path = window.location.pathname;
+  let page = path.split("/").pop();
+  console.log( page );
   
   
 
