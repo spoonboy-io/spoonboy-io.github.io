@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function(event){
   
   // simple test
-  console.log("spoonboy snippets!");
+  console.log("snippets are go!");
   
   
   
