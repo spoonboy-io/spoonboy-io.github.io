@@ -14,10 +14,15 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     // only on allowed pages
     if (namePages.includes(pagePrefixed)) {
-        // set up  the trim name field event & handler
-        let nameF = document.getElementById("name");
-        nameF.addEventListener("blur", (event) => {
-            nameF.value = nameF.value.trim()
+
+        document.body.addEventListener("click", (event) => {
+            let nameF = document.getElementById("name");
+            if (nameF != null) {
+                nameF.addEventListener("blur", (event) => {
+                    nameF.value = nameF.value.trim()
+                });
+            }
         });
+
     }
 });
