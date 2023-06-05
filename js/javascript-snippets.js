@@ -3,8 +3,6 @@ console.log("JavaScript Snippets plugin is installed");
 
 // wrap all our snippets so that we have the DOM available to read/manipulate
 document.addEventListener("DOMContentLoaded", function(event){
-    // allowed pages, we limit the scope of our event handlers to what is needed
-    let namePages = ["provisioning/instances", "provisioning/catalog", "service-catalog/dashboard"];
 
     // get the current page & prefix
     let path = window.location.pathname.split("/");
@@ -13,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     let pagePrefixed = prefix + "/" + page;
 
     // only on allowed pages
-    if (namePages.includes(pagePrefixed)) {
-
+    if (pagePrefixed == "provisioning/instances") {
         document.body.addEventListener("click", (event) => {
             let nameF = document.getElementById("name");
             if (nameF != null) {
@@ -23,6 +20,5 @@ document.addEventListener("DOMContentLoaded", function(event){
                 });
             }
         });
-
     }
 });
