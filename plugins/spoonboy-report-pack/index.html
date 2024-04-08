@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Spoonboy.io - Switch, JSON preprocessor for use with Morpheus option lists</title>
-    <meta name="description" content="Switch performs preprocessing on JSON data. Designed to simplify Morpheus option list creation and management, Switch can fetch a target URL and parse it, creating name and value keys in a new JSON file according to the YAML configuration rules provided">
-    <meta name="keywords" content="json, option lists, rest, morpheus">
+    <title>Spoonboy.io - Spoon Boy Report Pack Plugin</title>
+    <meta name="description" content="A suite of additional reports for Morpheus packaged as single plugin.">
+    <meta name="keywords" content="plugin, reports, report pack">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/bulma.min.css">
     <link rel="stylesheet" href="/css/bulma-steps.min.css">
@@ -19,16 +19,16 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://spoonboy.io/applications/switch-json-preprocessor">
-    <meta property="og:title" content="Switch - JSON preprocessor for use with Morpheus option lists">
-    <meta property="og:description" content="Switch performs preprocessing on JSON data. Designed to simplify Morpheus option list creation and management">
+    <meta property="og:url" content="https://spoonboy.io/plugins/spoonboy-report-pack">
+    <meta property="og:title" content="Spoonboy.io - Spoon Boy Report Pack Plugin">
+    <meta property="og:description" content="A suite of additional reports for Morpheus packaged as single plugin.">
     <meta property="og:image" content="https://spoonboy.io/images/social/default-social-card.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://spoonboy.io/applications/switch-json-preprocessor">
-    <meta property="twitter:title" content="Switch - JSON preprocessor for use with Morpheus option lists">
-    <meta property="twitter:description" content="Switch performs preprocessing on JSON data. Designed to simplify Morpheus option list creation and management">
+    <meta property="twitter:url" content="https://spoonboy.io/plugins/spoonboy-report-pack">
+    <meta property="twitter:title" content="Spoonboy.io - Spoon Boy Report Pack Plugin">
+    <meta property="twitter:description" content="A suite of additional reports for Morpheus packaged as single plugin.">
     <meta property="twitter:image" content="https://spoonboy.io/images/social/default-social-card.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -145,10 +145,10 @@
     <div class="container">
         <div id="banner-top">
             <h1>
-                Switch
+                Spoon Boy Report Pack
             </h1>
             <h2>
-                Preprocess JSON data to `name` and `value` keys
+                A suite of additional reports in a single plugin designed to extend the management information available in Morpheus.
             </h2>
         </div>
     </div>
@@ -157,187 +157,59 @@
 
 <!-- Start Intro -->
 <section id="intro-project" class="section is-medium">
-
     <div class="container is-fullhd">
+
+
         <div class="columns">
             <div class="column">
                 <h2 class="mb-5">
-                    Switch simplifies Morpheus option list creation by creating easy-to-</br>consume JSON files from your complex REST data sources
+                    Extend your Management Information.
                 </h2>
+
+                <p>
+                    This report pack is built for the post v1.0 plugin framework so requires Morpheus version later than 6.3.0.
+                    New reports are being added frequently, currently the pack contains the following addtional reports:
+                </p>
+
+                <h3>User Reports</h3>
+
+                <p>
+
+                    A suite of reports that make it simple to inspect the status of the user accounts accessing your Morpheys appliance.
+                    <ul class="unlist">
+                        <li>2FA Status Report</li>
+                        <li>Account Locked Report</li>
+                        <li>Account Disabled Report</li>
+                        <li>Password Expired Report</li>
+                        <li>Failed Login Attempts Report</li>
+                        <li>Logged In Users Report</li>
+                     </ul>
+                </p>
+
+                <h3>Provisioning Inventory Reports</h3>
+                <p>
+
+                Additional reports to augment your provisioning inventory reporting.
+                <ul class="unlist">
+                    <li>Morpheus Agent Installed Version Report</li>
+                </ul>
+
+                </p>
             </div>
-        </div>
-    </div>
 
-    <div class="container is-fullhd">
-
-
-        <div class="columns">
-            <div class="column">
-                <p>
-                    Switch performs preprocessing on JSON data. Designed to simplify Morpheus option list creation and management, Switch can fetch a target URL and parse it,
-                    creating name and value keys in a new JSON file according to the YAML configuration rules provided.
-                </p>
-                <p>
-                    Switch can manage multiple source files, and, using a Time to Live (TTL) for each source it will refresh the data at the specified interval.
-                    Switch saves the data as a new JSON file in a location you specify. Any web server can serve it, you could also use the <a href="/applications/dujour-json-csv-file-server">Dujour JSON/CSV data file server</a>.
-                </p>
-                <p>
-                    Formulating the JavaScript for Morpheus Option List REST translation scripts can be complex, while any JSON file which presents as an array of name and value keys,
-                    needs no translation script whatsoever since Morpheus is able to interpret it automatically.
-                </p>
-                <p>
-                    So, Switch takes a complex JSON payload, which would require a translation script to parse in Morpheus, and creates a simple representation of the data needed for the option list.
-                   </p>
-                <p> Basic use, requires no translation script, more complicated use (such as dependent inputs) will mean any translation script is much simplified.
-                </p>
-            </div>
-            <div class="column">
-                <div class="show-mobile" style="text-align:center;">
-                    <a href="https://youtu.be/q5KmGUmMRhw"><button class="button is-link is-large">Watch Video</button></a>
-                </div>
-                <div class="drop-mobile">
-
-                    <iframe width="660" height="396" src="https://www.youtube.com/embed/q5KmGUmMRhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                </div>
-            </div>
         </div>
     </div>
 </section>
 <!-- End Intro -->
 
-<!-- Start Features -->
-<section id="features-project" class="section">
-    <div class="container is-fullhd">
-        <h2 class="mb-4 has-text-centered">
-            JSON that is option list ready
-        </h2>
-        <p class="has-text-centered">Switch extracts the data you need into name and value keys. No complex translation scripts are required for basic use. </p>
-        <div class="columns">
-            <div class="column ">
-                <h4>Transform this data</h4>
-                <div>
-<pre style="height:230px; max-width:430px!important;">
-{
-  "items": {
-    "item": [
-      {
-        "batters": {
-          "batter": [
-            {
-              "id": "1001",
-              "type": "Regular"
-            },
-            {
-              "id": "1002",
-              "type": "Chocolate"
-            },
-            {
-              "id": "1003",
-              "type": "Blueberry"
-            },
-            {
-              "id": "1004",
-              "type": "Devil's Food"
-            }
-          ]
-        },
-        "id": "0001",
-        "name": "Cake",
-        "ppu": 0.55,
-        "topping": [
-          {
-            "id": "5001",
-            "type": "None"
-          },
-          {
-            "id": "5002",
-            "type": "Glazed"
-          },
-          {
-            "id": "5005",
-            "type": "Sugar"
-          },
-          {
-            "id": "5007",
-            "type": "Powdered Sugar"
-          },
-          {
-            "id": "5006",
-            "type": "Chocolate with Sprinkles"
-          },
-          {
-            "id": "5003",
-            "type": "Chocolate"
-          },
-          {
-            "id": "5004",
-            "type": "Maple"
-          }
-        ],
-        "type": "donut"
-      }
-    ]
-  }
-}
-</pre>
-                </div>
-            </div>
-
-            <div class="column">
-                <h4>Into this data</h4>
-                <div>
-                    <pre style="height:230px; max-width:430px!important;">
-[{
-	"name": "Regular",
-	"value": "1001"
-}, {
-	"name": "Chocolate",
-	"value": "1002"
-}, {
-	"name": "Blueberry",
-	"value": "1003"
-}, {
-	"name": "Devil's Food",
-	"value": "1004"
-}]
-</pre>
-                </div>
-            </div>
-
-            <div class="column">
-                <h4>So you don't need to write this</h4>
-                <div>
- <pre style="height:230px; max-width:430px!important;">
-// extract data to name and value using the JavaScript
-
-for (var x = 0; x < data.items.item[0].batters.batter.length; x++) {
-  results.push(
-     {
-        name: data.items.item[0].batters.batter[x].type,
-        value: data.items.item[0].batters.batter[x].id
-     }
-  );
-}
-</pre>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-<!-- End Features -->
-
-
 <!-- Start Getting Started -->
-<section id="getting-started-black" class="section">
+<section id="getting-started" class="section">
     <div class="container is-fullhd">
         <h2 class="mb-4 has-text-centered">
-            Get started with Switch
+            Examples
         </h2>
         <p class="has-text-centered">
-           Switch is simple to install and configure...
+            Checkout the individual report examples
         </p>
 
 
@@ -348,36 +220,55 @@ for (var x = 0; x < data.items.item[0].batters.batter.length; x++) {
                     <div class="card-content">
                         <div class="media">
                             <div class="media-left">
-                                <i class="up-icon color-key-icon fa-solid fa-download fa-2x"></i>
+                                <i class="up-icon color-key-icon fa-solid fa-file-invoice fa-2x"></i>
                             </div>
                             <div class="media-content">
-                                <h3 class="title is-4">Install the application</h3>
+                                <h3 class="title is-4">2FA Status Report</h3>
                             </div>
                         </div>
 
                         <div class="content">
-                            <p>
-                                Switch is available for Linux and Mac OS and can be found on <a href="https://github.com/spoonboy-io/switch">Github</a>. It may be hosted on the same server as the Morpheus Appliance or on a separate VM.
-                            </p>
-                            <p>
-                                Download the <a href="https://github.com/spoonboy-io/switch/releases/latest">latest release</a> to your server and unpack the gzipped package.
-                            </p>
-                            <div>
-<pre style="height:77px;">
-wget https://github.com/spoonboy-io/switch/releases/download/v0.0.1/switch_0.0.1_Linux_x86_64.tar.gz
-tar -xvf switch_0.0.1_Linux_x86_64.tar.gz
-</pre>
-                            </div>
-
-                            <p>Run the Switch application</p>
-                            <div>
-<pre style="height:60px;">
-./switch
-</pre>
-                            </div>
+                            <img src="https://github.com/spoonboy-io/spoon-boy-report-pack/raw/main/samples%2F2FAStatusOfUsersReport.png" alt="2FA Status Report"/>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="card card-margin">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-solid fa-file-invoice fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Password Expired Report</h3>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <img src="https://github.com/spoonboy-io/spoon-boy-report-pack/raw/main/samples%2FpasswordExpiredReport.png" alt="Password Expired Report"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-margin">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-solid fa-file-invoice fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Account Disabled Report</h3>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <img src="https://github.com/spoonboy-io/spoon-boy-report-pack/raw/main/samples%2FdisabledUserAccountsReport.png" alt="Account Disabled Report"/>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
 
@@ -387,77 +278,73 @@ tar -xvf switch_0.0.1_Linux_x86_64.tar.gz
                     <div class="card-content">
                         <div class="media">
                             <div class="media-left">
-                                <i class="up-icon color-key-icon fa-sharp fa-solid fa-cloud-arrow-down fa-2x"></i>
+                                <i class="up-icon color-key-icon fa-solid fa-file-invoice fa-2x"></i>
                             </div>
                             <div class="media-content">
-                                <h3 class="title is-4">Configure a JSON source</h3>
+                                <h3 class="title is-4">Morpheus Agent Installed Version Report</h3>
                             </div>
                         </div>
 
                         <div class="content">
-                            <p>
-                                Create a `sources.yaml` file in the same directory as Switch and configure it for your JSON source.
-                                A sample file is available <a href="https://github.com/spoonboy-io/switch/blob/master/sources.yaml">here</a>.
-                            </p>
-                            <p>Switch will fetch and process the data, to make a new json file qccording to this configuration</p>
-                            <div>
-<pre style="height:190px;">
----
-- source:
-    description: Some blog posts (array)
-    url: https://jsonplaceholder.typicode.com/posts
-    token:
-    extract:
-        name: title
-        value: id
-    ttl: 5
-    save:
-        folder: test
-        filename: test.json
-</pre>
-                            </div>
-
+                            <img src="https://github.com/spoonboy-io/spoon-boy-report-pack/raw/main/samples%2FmorpheusAgentInstalledVersionReport.png" alt="Morpheus Agent Installed Version Report"/>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="column">
-                <div class="card">
+                <div class="card card-margin">
                     <div class="card-content">
                         <div class="media">
                             <div class="media-left">
-                                <i class="up-icon color-key-icon fa-solid fa-database fa-2x"></i>
+                                <i class="up-icon color-key-icon fa-solid fa-file-invoice fa-2x"></i>
                             </div>
                             <div class="media-content">
-                                <h3 class="title is-4">Serve your simplified JSON data</h3>
+                                <h3 class="title is-4">Account Locked Report</h3>
                             </div>
                         </div>
 
                         <div class="content">
-                            <p>
-                                Switch can save data to any location on the same server, perhaps a webserver.
-                                If you run Dujour on the same VM, you can also save it there, and Dujour will serve it.
-                            </p>
-                            <div>
-<pre style="height:90px;">
-    save:
-        folder: test
-        filename: test.json
-</pre>
-                            </div>
-
-                            <p>
-                                Switch will use the TTL value (specified in minutes) to expire and refresh the data.
-                            </p>
-                            <div>
-<pre style="height:65px;">
-    ttl: 5
-</pre>
-                            </div>
+                            <img src="https://github.com/spoonboy-io/spoon-boy-report-pack/raw/main/samples%2FaccountLockedReport.png" alt="Account Locked Report"/>
                         </div>
                     </div>
                 </div>
+
+
+
+                <div class="card card-margin">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-solid fa-file-invoice fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Failed Login Attempts Report</h3>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <img src="https://github.com/spoonboy-io/spoon-boy-report-pack/raw/main/samples%2FfailedLoginAttemptsReport.png" alt="Failed Login Attempts Report"/>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card card-margin">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="up-icon color-key-icon fa-solid fa-file-invoice fa-2x"></i>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="title is-4">Logged In Users Report</h3>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <img src="https://github.com/spoonboy-io/spoon-boy-report-pack/raw/main/samples%2FcurrentlyLoggedInUsersReportTenant.png" alt="Logged In Users Report"/>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -474,24 +361,22 @@ tar -xvf switch_0.0.1_Linux_x86_64.tar.gz
 
         <div class="level">
             <div class="tags level-left">
-                <span class="tag is-link">golang</span>
                 <span class="tag is-link">morpheus</span>
-                <span class="tag is-link">json</span>
-                <span class="tag is-link">option lists</span>
-                <span class="tag is-link">rest</span>
+                <span class="tag is-link">plugins</span>
+                <span class="tag is-link">reports</span>
             </div>
 
             <div class="level-right">
                 <div style="margin-top:-20px;">
-                    <a class="github-button" href="https://github.com/spoonboy-io/switch/subscription" data-show-count="true" aria-label="Watch spoonboy-io/switch on GitHub">Watch</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/spoon-boy-report-pack/subscription" data-show-count="true" aria-label="Watch spoonboy-io/spoon-boy-report-pack on GitHub">Watch</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/switch" data-show-count="true" aria-label="Star spoonboy-io/switch on GitHub">Star</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/spoon-boy-report-pack" data-show-count="true" aria-label="Star spoonboy-io/spoon-boy-report-pack on GitHub">Star</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/switch/issues" data-show-count="true" aria-label="Issue spoonboy-io/switch on GitHub">Issue</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/spoon-boy-report-pack/issues" data-show-count="true" aria-label="Issue spoonboy-io/spoon-boy-report-pack on GitHub">Issue</a>
 
                     <a class="github-button" href="https://github.com/sponsors/spoonboy-io" aria-label="Sponsor @spoonboy-io on GitHub">Sponsor</a>
 
-                    <a class="github-button" href="https://github.com/spoonboy-io/switch/archive/HEAD.zip" aria-label="Download spoonboy-io/switch on GitHub">Download Source</a>
+                    <a class="github-button" href="https://github.com/spoonboy-io/spoon-boy-report-pack/archive/HEAD.zip" aria-label="Download spoonboy-io/spoon-boy-report-pack on GitHub">Download Source</a>
                 </div>
             </div>
 
